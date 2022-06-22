@@ -16,6 +16,6 @@
  */
 
 Ext.application({
-    name: 'Traccar',
+    name: 'RadarGPS',
     extend: 'Traccar.Application'
 });

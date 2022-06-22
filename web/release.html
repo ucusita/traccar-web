@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Traccar</title>
-<link rel="icon" sizes="192x192" href="/icon.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="stylesheet" href="app.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Infotronica RadarGPS</title>
+    <link rel="icon" sizes="192x192" href="/icon.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="stylesheet" href="app.css">
 </head>
+
 <body>
-<div id="spinner"></div>
-<script>localStorage.getItem('legacyApp') || location.replace('/modern/');</script>
-<div id="update"><a href="javascript:localStorage.removeItem('legacyApp') || location.replace('/modern/');">Switch to Modern App</a></div>
-<div id="attribution">Powered by <a href="https://www.traccar.org/" target="_blank">Traccar GPS Tracking System</a></div>
-<script id="loadScript" src="load.js"></script>
+    <div id="spinner"></div>
+    <script>
+        localStorage.getItem('legacyApp') || location.replace('/modern/');
+    </script>
+    <div id="update"><a href="javascript:localStorage.removeItem('legacyApp') || location.replace('/modern/');">Versión moderna</a></div>
+    <div id="attribution">Powered by <a href="https://www.infotronico.com/" target="_blank">Infotronica RadarGPS Tracking System</a></div>
+    <script id="loadScript" src="load.js"></script>
 </body>
+
 </html>
