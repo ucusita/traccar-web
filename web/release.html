@@ -8,14 +8,38 @@
     <link rel="icon" sizes="192x192" href="/icon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="app.css">
+    <style>
+        img.bg {
+            /* Set rules to fill background */
+            min-height: 100%;
+            min-width: 1024px;
+            /* Set up proportionate scaling */
+            width: 100%;
+            height: auto;
+            /* Set up positioning */
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        
+        @media screen and (max-width: 1024px) {
+            /* Specific to this particular image */
+            img.bg {
+                left: 50%;
+                margin-left: -512px;
+                /* 50% */
+            }
+        }
+    </style>
 </head>
 
 <body>
+    <img src="images/bg.jpg" class="bg">
     <div id="spinner"></div>
     <script>
         localStorage.getItem('legacyApp') || location.replace('/modern/');
     </script>
-    <div id="update"><a href="javascript:localStorage.removeItem('legacyApp') || location.replace('/modern/');">Versión moderna</a></div>
+    <!-- <div id="update"><a href="javascript:localStorage.removeItem('legacyApp') || location.replace('/modern/');">Versión moderna</a></div> -->
     <div id="attribution">Powered by <a href="https://www.infotronico.com/" target="_blank">Infotronica RadarGPS Tracking System</a></div>
     <script id="loadScript" src="load.js"></script>
 </body>
